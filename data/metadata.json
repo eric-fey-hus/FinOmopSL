@@ -1,0 +1,830 @@
+{
+    "tables": {
+        "df_xy": {
+            "primary_key": "person_id",
+            "columns": {
+                "person_id": {
+                    "sdtype": "id"
+                },
+                "OSS_days": {
+                    "sdtype": "numerical"
+                },
+                "OSS_status": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Basophils/100 leukocytes in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Blasts/100 leukocytes in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Eosinophils/100 leukocytes in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Hemoglobin [Mass/volume] in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Leukocytes [#/volume] in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Lymphocytes/100 leukocytes in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Monocytes/100 leukocytes in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Neutrophils/100 leukocytes in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', -5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', -4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', -3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', -2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', -1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 0.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 1.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 2.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 3.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 4.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 5.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 6.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 7.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 8.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 9.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 10.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 11.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 12.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 13.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 14.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 15.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 16.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 17.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 18.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 19.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 20.0)": {
+                    "sdtype": "numerical"
+                },
+                "('Platelets [#/volume] in Blood', 21.0)": {
+                    "sdtype": "numerical"
+                }
+            }
+        }
+    },
+    "relationships": [],
+    "METADATA_SPEC_VERSION": "MULTI_TABLE_V1"
+}

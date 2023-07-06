@@ -1,0 +1,18 @@
+######################################################################
+# 
+######################################################################
+Name: run1
+TaskType: RUN_SWARM
+Author: Eric
+Prereq: build_pycox
+Outcome: run
+Body:
+    Command: test_v2.py
+    Entrypoint: python3
+    WorkingDir: /tmp/test
+    Envvars: ["MODEL_DIR": model, "MAX_EPOCHS": 100, "MIN_PEERS": 1]
+    PrivateContent: /tmp/test/
+    SharedContent:
+    -   Src: /opt/hpe/swarm-learning/projects/FinOmopSL/model
+        Tgt: /tmp/test/model
+        MType: BIND
