@@ -85,6 +85,26 @@ Body:
     PrivateContent: /tmp/data
     ...
 ```
- 
 
+Starting containers
+---
 
+1. When starting containers, they need to have the right labels
+
+    - SWCI: `--label type=swci`
+
+2. The joinToken for spiffe expires after 10 min.
+    - To start the sn and swop containters the joinToken needs to be valid.
+    - it looks like the swci container can be started and run and init script also after that.
+    - the spiffe agent also needs the joinToken and that should be configered in the `spire-agent/agent_conf` file.
+        -  here this is achived by poviding `spire-agent/agent_conf.template` file that contains the placeholder `<JOIN-TOKEN>`
+        -  This replaces the `<JOIN-TOKEN>` assuming that the env variable `joinToken` contains the join token:
+            ```
+            sed -f - "spire-agent/agent.conf.template" > spire-agent/agent.conf << _EOF
+            s/<JOIN-TOKEN>/${joinToken}/g
+            _EOF
+            ```
+        - The join token has to be generated on the rp VM by the spire-server:
+            ```
+            docker exec spire-server /opt/spire/bin/spire-server token generate -spiffeID spiffe://hus.org/agent
+            ```
