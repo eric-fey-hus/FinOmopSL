@@ -1,15 +1,14 @@
----
 ######################################################################
 # (C)Copyright 2021-2023 Hewlett Packard Enterprise Development LP
 ######################################################################
 groupname  : demo
 taskrunner : defaulttaskbb.taskdb.sml.hpe
+network: default
 policyuri  : ~
 resourcemgr :
     mgrtype    : DOCKER
     accessinfo :
         accesstype : FROMENV
-network    : host-1-net
 apls :
     locator :
         host : 172.17.0.4
@@ -22,7 +21,7 @@ apisrv :
 envvars :
     - SL_LOG_LEVEL : INFO
 dns :
-    - 10.10.0.2
+    - 10.10.0.3
 nodes :
     - slnodedef :
         idx : 0
@@ -36,11 +35,13 @@ nodes :
         slhostname : sl-hus.org
         slhostip   : ~
         slport : 30375
+        slfsservice: fs.sl.hus.org.swarm:30354
         slenvvars : null
         usrhostname : ml-1
-        usrenvvars : [SCRATCH_DIR : "ml-1"]
+        usrenvvars : null
         privatedata :
-            src: "/opt/hpe/swarm-learning/projects/FinOmopSL/data"
+            src: /opt/hpe/swarm-learning/projects/FinOmopSL/data
             mType : BIND
         sllabels:
             swarm-node-type: sl
+            
