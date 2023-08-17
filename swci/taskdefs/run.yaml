@@ -1,7 +1,7 @@
 ######################################################################
 # 
 ######################################################################
-Name: run3.4
+Name: run_HUSVARHA_1
 TaskType: RUN_SWARM
 Author: Eric
 Prereq: build_pycox
@@ -10,7 +10,7 @@ Body:
     Command: model/test_v2.1.py
     Entrypoint: python3
     WorkingDir: /tmp
-    Envvars: ["MODEL_DIR": model, "MAX_EPOCHS": 100, "MIN_PEERS": 1]
+    Envvars: ["MODEL_DIR": model, "MAX_EPOCHS": 100, "MIN_PEERS": 2]
     PrivateContent: /tmp/data
     SharedContent:
     -   Src: /opt/hpe/swarm-learning/projects/FinOmopSL/model
