@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# Script to start SL on non-sentinel node. This means the swci is not started.
+# Script to sart SL on sentienel node. This means swci is started 
+# with an init script (swci/swci-init) that runs the build and run tasks.
 
 joinToken=$1
 DNSIP=10.10.0.3
@@ -99,5 +100,6 @@ echo "Starting SWOP..."
 /opt/hpe/swarm-learning/scripts/bin/run-swop -d --name=swop-hus.org --label type=swop --dns=DNSIP --sn-api-service=api.sn.hus.org.swarm --apls-ip=$APLSIP -e no_proxy= -e http_proxy= -e https_proxy= -e SWOP_KEEP_CONTAINERS=1 --usr-dir=/opt/hpe/swarm-learning/projects/FinOmopSL/swop --profile-file-name=swop_profile.yaml --socket-
 path /tmp/agent.sock 
 
-# RUN SWCI (ONLY FOR SENTINEL NODE): 
-#/opt/hpe/swarm-learning/scripts/bin/run-swci --rm=false -dt --name=swci-hus.org --label type=swci --dns=DNSIP --apls-ip=$APLSIP -e no_proxy= -e http_proxy= -e https_proxy= --usr-dir=/opt/hpe/swarm-learning/projects/FinOmopSL/swci --init-script-name=swci-init --socket-path /tmp/agent.sock
+
+# RUN SWCI: 
+/opt/hpe/swarm-learning/scripts/bin/run-swci --rm=false -dt --name=swci-hus.org --label type=swci --dns=DNSIP --apls-ip=$APLSIP -e no_proxy= -e http_proxy= -e https_proxy= --usr-dir=/opt/hpe/swarm-learning/projects/FinOmopSL/swci --init-script-name=swci-init --socket-path /tmp/agent.sock
