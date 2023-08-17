@@ -12,20 +12,21 @@ Assumptions:
    ```sh
    docker exec spire-server /opt/spire/bin/spire-server token generate -spiffeID spiffe://hus.org/agent
    ```
-   using the appropiate `spiffeID` instead of `spiffe://hus.org/agent`
+   using the appropriate `spiffeID` instead of `spiffe://hus.org/agent`
    
 2. On the ML VM:  
-   Start all the docker containers of the SL framework. The `run.sh` script facilitaes this:
+   Start all the docker containers of the SL framework. The `run.sh` script facilitates this:
    ```sh
    run.sh JOINTOKEN
    ```
    IMPORTANT:
-   In the `run.sh` script configure the IP addresses as appropiate for your organisation.
-   The provided file is the config for HUS, see lines 5 nd 6 for  `DNSIP` and `APLSIP` and lines 20-32 for the IPs of the ML node(s).
+   In the `run.sh` script configure the IP addresses as appropriate for your organization. 
+   The provided file is the config for HUS, see lines 5-7 for  `DNSIP` and `APLSIP`, and `MLVMIP` for the IP of your ML VM. 
+   Also search-and-replace "hus.org" as appropriate for your organization. 
 
    The script will:
      - Start the DNS server, swarm-bind9, and configure the corresponding name resolution and IPs.
-     - Generate a sprire `agent.conf` file inlcuding the JOINTOKEN from a template file.
+     - Generate a spire `agent.conf` file including the JOINTOKEN from a template file.
      - Start the SPIRE agent
      - Start the SN node
      - Start the SWOP node
@@ -37,14 +38,14 @@ Assumptions:
    ```sh
    docker logs swop-hus.org
    ```
-   where `swop-hus.org` should be replaced by the appropiate container name for your institution.  
+   where `swop-hus.org` should be replaced by the appropriate container name for your institution.  
 
-## Current best practises for SL projects.
+## Current best practices for SL projects.
 
 Your SL project should have these folders:
 
 - model: contains model file (python), shared
-- data: private data (copy provate data for model training into here)
+- data: private data (copy private data for model training into here)
 - result: for saving trained model, shared
 - swci: taskdefs and swci_init files (yaml)
 - swop: swop_profile (yaml)
@@ -55,8 +56,8 @@ Mount: `PrivateContent` field in the run task definition
 
 Shared data are mounted in the task definition file.
 
-Every folder that you wnat to acess in the containers have to be mounted. 
-Similary only files in mounted folders are availabe on the host. 
+Every folder that you want to access in the containers have to be mounted. 
+Similarly only files in mounted folders are available on the host. 
 This is why we mount all three folders:
 
 
@@ -71,8 +72,8 @@ Example: Private mount:
 
 ## Example: Shared mount:
 
-The following will result in the folders data and result to become available for the model training running in the container spawnd by the task. 
-  - As far as the model (model code) is concerned, the data are in /tmp/data and the results can be writte to /tmp/result. 
+The following will result in the folders data and result to become available for the model training running in the container spawned by the task. 
+  - As far as the model (model code) is concerned, the data are in /tmp/data and the results can be written to /tmp/result. 
   - Location on the host: /opt/hpe/swarm-learning/projects/FinOmopSL/data/ and /opt/hpe/swarm-learning/projects/FinOmopSL/result, respectively
     
 taskdef/run.yaml
@@ -133,10 +134,10 @@ Starting containers
     - SWCI: `--label type=swci`
 
 2. The joinToken for spiffe expires after 10 min.
-    - To start the sn and swop containters the joinToken needs to be valid.
+    - To start the sn and swop containers the joinToken needs to be valid.
     - it looks like the swci container can be started and run and init script also after that.
-    - the spiffe agent also needs the joinToken and that should be configered in the `spire-agent/agent_conf` file.
-        -  here this is achived by poviding `spire-agent/agent_conf.template` file that contains the placeholder `<JOIN-TOKEN>`
+    - the spiffe agent also needs the joinToken and that should be configured in the `spire-agent/agent_conf` file.
+        -  here this is archived by providing `spire-agent/agent_conf.template` file that contains the placeholder `<JOIN-TOKEN>`
         -  This replaces the `<JOIN-TOKEN>` assuming that the env variable `joinToken` contains the join token:
             ```
             sed -f - "spire-agent/agent.conf.template" > spire-agent/agent.conf << _EOF
