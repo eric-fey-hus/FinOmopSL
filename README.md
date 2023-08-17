@@ -1,6 +1,45 @@
 # FinOmopSL
 
-Current best practises for SL projects.
+## Starting SL
+
+This refers to the split solution. 
+Assumptions: 
+  - RP VM with nginx and spire already running.
+  - APLS running and license installed
+
+1. On the RP VM:  
+   Generate the JOINTOKEN as follows:
+   ```sh
+   docker exec spire-server /opt/spire/bin/spire-server token generate -spiffeID spiffe://hus.org/agent
+   ```
+   using the appropiate `spiffeID` instead of `spiffe://hus.org/agent`
+   
+2. On the ML VM:  
+   Start all the docker containers of the SL framework. The `run.sh` script facilitaes this:
+   ```sh
+   run.sh JOINTOKEN
+   ```
+   IMPORTANT:
+   In the `run.sh` script configure the IP addresses as appropiate for your organisation.
+   The provided file is the config for HUS, see lines 5 nd 6 for  `DNSIP` and `APLSIP` and lines 20-32 for the IPs of the ML node(s).
+
+   The script will:
+     - Start the DNS server, swarm-bind9, and configure the corresponding name resolution and IPs.
+     - Generate a sprire `agent.conf` file inlcuding the JOINTOKEN from a template file.
+     - Start the SPIRE agent
+     - Start the SN node
+     - Start the SWOP node
+   Note that the SWCI node will not be started. If you are the sentinel node (HUS),
+   use `run_sentinel.sh` instead. At the end of the script, 
+   this will also start the SWCI using a init script (`swci/swci-init`) that runs the build and run tasks.
+
+3. SL should now be up and running. You can monitor task execution using
+   ```sh
+   docker logs swop-hus.org
+   ```
+   where `swop-hus.org` should be replaced by the appropiate container name for your institution.  
+
+## Current best practises for SL projects.
 
 Your SL project should have these folders:
 
