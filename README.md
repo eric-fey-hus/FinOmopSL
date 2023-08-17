@@ -20,9 +20,10 @@ Assumptions:
    run.sh JOINTOKEN
    ```
    IMPORTANT:
-   In the `run.sh` script configure the IP addresses as appropriate for your organization. 
+   1. In the `run.sh` script configure the IP addresses as appropriate for your organization. 
    The provided file is the config for HUS, see lines 5-7 for  `DNSIP` and `APLSIP`, and `MLVMIP` for the IP of your ML VM. 
-   Also search-and-replace "hus.org" as appropriate for your organization. 
+   2. Also search-and-replace "hus.org" as appropriate for your organization. 
+   3. You might also need to adapt `swop/swop_profile.yaml`, replacing IPs and "hus.org" as appropriate for your organization
 
    The script will:
      - Start the DNS server, swarm-bind9, and configure the corresponding name resolution and IPs.
