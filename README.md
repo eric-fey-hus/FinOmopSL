@@ -41,6 +41,24 @@ Assumptions:
    ```
    where `swop-hus.org` should be replaced by the appropriate container name for your institution.  
 
+### Troubleshoot
+
+1. DNS server IP  
+   The address the DNS is dynamically assigned by docker when running/starting container, meaning that it can change. For example, I had 10.10.0.4, 10.10.0.3, and now 10.10.0.2, depending on what containers where running/started before. This means that the DNS IP needs to be configured correctly when starting the containers:
+   - In the `run.sh` script the parameter `DNSIP` can be used. 
+   - When starting containers manually using the docker run command,    
+     using option  ​`--DNS=10.10.0.2`​  or similar as appropriate for SN, SWOP, and SWCI
+   - Maybe also check `swop_profile.yaml` if you are using that.
+  
+   You can check DNS IP once the swarm-bind9 container is running using
+   ```sh
+   docker container  inspect swarm-bind9 
+   ```
+   and/or confirm that containers use the `bridge` network
+   ```sh 
+   docker network inspect bridge
+   ```
+
 ## Current best practices for SL projects.
 
 Your SL project should have these folders:
