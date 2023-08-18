@@ -5,9 +5,9 @@
 joinToken=$1
 DNSIP=10.10.0.3
 APLSIP=172.17.0.4
+MLVMIP=172.17.0.4
 
-
-echo "Assumption: APLS running with licence installed. DNS image available."
+echo "Assumption: APLS running with license installed. DNS image available."
 echo "Assumption: DNS running at: "$DNSIP
 # BUILD DNS: 
 #if [[ -z "$(docker images -q bind9:hus.org)" ]]; then
@@ -18,12 +18,13 @@ echo "Assumption: DNS running at: "$DNSIP
 docker run -d --name=swarm-bind9 -e no_proxy= bind9:hus.org -d swarm
 
 # API: 
-docker exec swarm-bind9 add-dns -d api.sn.hus.org.swarm -i 172.17.0.4
+docker exec swarm-bind9 add-dns -d api.sn.hus.org.swarm -i $MLVMIP
 # P2P: 
-docker exec swarm-bind9 add-dns -d p2p.sn.hus.org.swarm -i 172.17.0.4
+docker exec swarm-bind9 add-dns -d p2p.sn.hus.org.swarm -i $MLVMIP
 # FS: 
-docker exec swarm-bind9 add-dns -d fs.sl.hus.org.swarm -i 172.17.0.4
+docker exec swarm-bind9 add-dns -d fs.sl.hus.org.swarm -i $MLVMIP
 
+# THIS IS JUST FOR HUS & TESTING (MOCK TURKU node)
 # API: 
 docker exec swarm-bind9 add-dns -d api.sn.hustmp.org.swarm -i 13.79.76.164 
 # P2P: 
