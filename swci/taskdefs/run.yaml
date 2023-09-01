@@ -18,5 +18,5 @@ Body:
         MType: BIND
     -   Src: /opt/hpe/swarm-learning/projects/FinOmopSL/result
         Tgt: /tmp/result
-        MType: BINDpt/hpe/swarm-learning/examples/reverse-proxy/com
+        MType: BIND
 
