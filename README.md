@@ -2,7 +2,7 @@
 
 ## Getting the ML base image for the model
 The mdoel training depends on a base image that contains the technology stacck. In our case, `ericfeyhus/user-image-pycox` inlcuding pytorch, pycox, and swarm-learning.
-Yu can get the required base image from dockerhub (https://hub.docker.com/r/ericfeyhus/user-image-pycox). 
+You can get the required base image from dockerhub (https://hub.docker.com/r/ericfeyhus/user-image-pycox). 
 Execute on the ML VM:
 ```
 docker pull ericfeyhus/user-image-pycox:latest
