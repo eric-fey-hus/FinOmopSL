@@ -3,13 +3,13 @@ import pandas as pd
 from datetime import date, timedelta
 import os
 import subprocess
-from swarmlearning.pyt import SwarmCallback6_64.whl helper:/data
+from swarmlearning.pyt import SwarmCallback
 
 print("Test started")
 print("User: ", os.environ.get("USER"))
 print("User: ", subprocess.check_output("who"))
-print("Working directory: " , os.getcwd() )=sn-hus.org --dns=10.10>
-print(f"Contents: {os.listdir()}")label type=sn --sn-api->
+print("Working directory: " , os.getcwd()) 
+print(f"Contents: {os.listdir()}")
 
 #Load tidy data
 print("Loading tidy data")
