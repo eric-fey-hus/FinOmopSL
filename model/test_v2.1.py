@@ -59,7 +59,7 @@ print(f"Validation data: {x_val.shape[0]}")
 # Target mapping : DeepHit requires label_transform (dicretise times)
 
 num_durations = 10
-timepoints = np.array([0, 30.5*3, 30.5*6, 30.5*9, 365, 2*365, 3*365, 4*365, 5*365, 10*3>
+timepoints = np.array([0, 30.5*3, 30.5*6, 30.5*9, 365, 2*365, 3*365, 4*365, 5*365, 10*365])
 
 # Label transform (note: different for CoxPH):
 labtrans = DeepHitSingle.label_transform(timepoints)
@@ -151,7 +151,7 @@ class SLCallback(tt.cb.Callback):
 # Train model
 print("py model file: Training model")
 callbacks = [tt.cb.EarlyStopping(), SLCallback()]
-log = model.fit(x_train, y_train, batch_size, epochs=100, callbacks=callbacks, val_data>
+log = model.fit(x_train, y_train, batch_size, epochs=100, callbacks=callbacks, val_data=val, verbose=True)
 
 
 print("py model file: Finished training model")
